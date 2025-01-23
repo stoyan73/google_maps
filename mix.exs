@@ -8,7 +8,7 @@ defmodule GoogleMaps.Mixfile do
       app: :google_maps,
       description: "A Google Maps API in Elixir",
       version: @version,
-      elixir: "~> 1.3",
+      elixir: "~> 1.5",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -43,8 +43,8 @@ defmodule GoogleMaps.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:httpoison, "~> 1.7"},
-      {:jason, "~> 1.1"},
+      {:httpoison, "~> 2.0"},
+      {:jason, "~> 1.2"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
